@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-center">
+<h1 class="m-4"><%= @article.title %></h1>
+<button class="btn btn-outline-black"><%= link_to "edit!", edit_article_path%></button>
+<button class="btn btn-outline-black"><%= link_to "destroy", article_path(@article.id), data: {turbo_method: :delete}%></button>
+</div>
+<p class="m-4"><%= @article.content %></p>
